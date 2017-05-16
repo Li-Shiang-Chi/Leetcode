@@ -8,13 +8,13 @@ public class Solution {
         while(start <= end){
             mid = ((start + end) / 2);
             if((x / mid) == mid) return mid;
-            if((x/mid) > mid){// x > mid *mid
+            if((x / mid) > mid){// x > mid *mid
                 start = mid+1;
                 ans = mid;
             } 
-            else{
+            else{// x < mid * mid
                 end = mid -1;
-            } // x < mid * mid
+            } 
         }
         return ans;
     }
