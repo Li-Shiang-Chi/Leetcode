@@ -75,6 +75,7 @@ class Interval{
         this.start = start;
         this.end = end;
         this.weight = weight;
+
     }
  
 }
