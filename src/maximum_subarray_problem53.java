@@ -1,6 +1,6 @@
 public class Solution {
     public int maxSubArray(int[] nums) {
-        int max = detect(nums);
+        int max = detect(nums); // check if all negative
         int sum = 0;
         if (max < 0 ) return max;
         
